@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: auto;
+	background: linear-gradient(135deg, #ffce08, #ffffff);
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.3s ease-in-out;
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: linear-gradient(135deg, #333, #ffce08);
+	color: #fff;
+}
+
+.logo-header {
+	width: 60px;
+	height: 75px;
+	justify-content: space-between;
+	line-height: 1;
+}
+
+#logo {
+	width: 60px;
+	height: 75px;
+	justify-content: space-between;
+	line-height: 1;
+	background-image: url('../img/codigo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#Dev {
+	font-weight: bold;
+	margin-left: 85px;
+}
+
+#Masters {
+	font-weight: bold;
+	color: #ffce08;
+	margin-left: 105px;
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+}
+
+#nav-menu {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15px;
+	width: 200px;
+	transition: background-color 0.3s;
+	text-align: center;
+}
+
+#nav-menu:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	transition: 0.3s;
+	transform: scale(1.1);
+}
+
+#nav-menu-cursos {
+	color: #000;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+#nav-menu-cursos:hover,
+#MenuBar1 li ul li ul li a:hover {
+	transition: 0.3s;
+	transform: scale(1.05);
+}
+
+#MenuBar1 li ul li ul li a {
+	color: #000;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#nav-inicio-sesion {
+	color: #333;
+	background-color: #ffffff;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+#nav-inicio-sesion:hover {
+	background-color: #ffce08;
+}
+
+#contenido {
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 500px;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.footer-left {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.footer-left a {
+	color: #ffce08;
+	font-family: 'Poppins';
+	text-decoration: none;
+}
+
+.footer-left img {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+.footer-right {
+	display: flex;
+	gap: 15px;
+}
+
+.footer-right a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+}
+
+.footer-right a:hover {
+	background: #ffce08;
+	color: #333;
+	transform: translateY(-5px);
+}
+
+.hero-section {
+	background: linear-gradient(135deg, rgba(255, 206, 8, 0.8), rgba(0, 153, 255, 0.7)),
+		url('../img/codigo.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 80px 0px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+
+.hero-content h1 {
+	font-size: 2.8rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content p {
+	font-size: 1.2rem;
+	max-width: 800px;
+	margin: 0 auto;
+	line-height: 1.8;
+}
+
+.courses-intro {
+	width: 100%;
+	padding: 50px 0px;
+	background: #fff;
+	text-align: center;
+}
+
+.courses-intro p {
+	font-size: 1.3rem;
+	line-height: 1.8;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.courses-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 30px;
+	padding: 30px 0 60px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.course-category {
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
+
+.course-category:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#lenguajes:hover {
+	box-shadow: 0 15px 30px rgba(0, 128, 255, 0.2);
+}
+
+#editores:hover {
+	box-shadow: 0 15px 30px rgba(76, 175, 80, 0.2);
+}
+
+#bases:hover {
+	box-shadow: 0 15px 30px rgba(255, 152, 0, 0.2);
+}
+
+#aplicaciones:hover {
+	box-shadow: 0 15px 30px rgba(233, 30, 99, 0.2);
+}
+
+.category-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #ffce08;
+}
+
+.category-icon {
+	font-size: 1.8rem;
+	margin-right: 15px;
+}
+
+#lenguajes .category-icon {
+	color: #0080ff;
+}
+
+#editores .category-icon {
+	color: #4CAF50;
+}
+
+#bases .category-icon {
+	color: #FF9800;
+}
+
+#aplicaciones .category-icon {
+	color: #E91E63;
+}
+
+.course-category h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #333;
+	margin: 0;
+}
+
+.course-list {
+	padding-left: 0;
+	list-style: none;
+}
+
+.course-list li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease-in-out;
+}
+
+.course-list li:last-child {
+	border-bottom: none;
+}
+
+.course-list a {
+	display: block;
+	color: #333;
+	padding: 12px 5px;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.course-list a:hover {
+	padding-left: 10px;
+}
+
+#lenguajes .course-list a:hover {
+	color: #0080ff;
+}
+
+#editores .course-list a:hover {
+	color: #4CAF50;
+}
+
+#bases .course-list a:hover {
+	color: #FF9800;
+}
+
+#aplicaciones .course-list a:hover {
+	color: #E91E63;
+}
+
+.cta-section {
+	background: linear-gradient(135deg, #333, #0080ff);
+	padding: 70px 0px;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+}
+
+.cta-section h2 {
+	font-size: 2.2rem;
+	margin-bottom: 15px;
+}
+
+.cta-section p {
+	font-size: 1.1rem;
+	max-width: 700px;
+	margin: 0 auto 30px;
+	opacity: 0.9;
+}
+
+.cta-button {
+	display: inline-block;
+	background: #ffce08;
+	color: #000;
+	padding: 12px 25px;
+	border-radius: 50px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+	background: #fff;
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.MenuBarHorizontal {
+	display: flex;
+	list-style-type: none;
+}
+
+.MenuBarHorizontal ul {
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	z-index: 1;
+	list-style-type: none;
+}
+
+.MenuBarHorizontal li:hover>ul {
+	display: block;
+}
+
+.MenuBarHorizontal ul ul {
+	left: 100%;
+	top: 0;
+}
+
+@media screen and (max-width: 992px) {
+	.courses-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.hero-content h1 {
+		font-size: 2.2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-header {
+		flex-direction: column;
+	}
+
+	.logo-header {
+		margin-bottom: 15px;
+	}
+
+	.nav-header {
+		width: 100%;
+	}
+
+	#contenido {
+		flex-direction: column;
+	}
+
+	.courses-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.hero-section {
+		padding: 40px 15px;
+	}
+
+	.hero-content h1 {
+		font-size: 1.8rem;
+	}
+
+	.courses-intro p {
+		font-size: 1rem;
+	}
+
+	.cta-section h2 {
+		font-size: 1.6rem;
+	}
+
+	.cta-section p {
+		font-size: 1rem;
+	}
+
+	.MenuBarHorizontal {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.MenuBarHorizontal li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.MenuBarHorizontal ul {
+		position: static !important;
+		width: 100% !important;
+		display: none;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-left,
+	.footer-right {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-header {
+		padding: 10px;
+	}
+
+	#contenido {
+		padding: 10px;
+	}
+
+	.hero-content h1 {
+		font-size: 1.5rem;
+	}
+
+	.cta-section {
+		padding: 30px 15px;
+	}
+
+	.cta-section h2 {
+		font-size: 1.4rem;
+	}
+
+	.cta-button {
+		padding: 10px 20px;
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.mobile-menu-toggle {
+		display: block;
+	}
+
+	.MenuBarHorizontal {
+		display: none;
+	}
+
+	.MenuBarHorizontal.active {
+		display: flex;
+	}
+}

@@ -1,0 +1,140 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #333, #ffce08);
+    color: #fff;
+}
+
+.logo-header {
+    width: 60px;
+    height: 75px;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+#logo {
+    width: 60px;
+    height: 75px;
+    justify-content: space-between;
+    line-height: 1;
+    background-image: url('../../img/codigo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#Dev {
+    font-weight: bold;
+    margin-left: 85px;
+}
+
+#Masters {
+    font-weight: bold;
+    color: #ffce08;
+    margin-left: 105px;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+#nav-menu {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    width: 170px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+#nav-menu:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#nav-menu-cursos {
+    color: #000;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+#nav-menu-cursos:hover,
+#MenuBar1 li ul li ul li a:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+#MenuBar1 li ul li ul li a {
+    color: #000;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#nav-inicio-sesion {
+    color: #333;
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#nav-inicio-sesion:hover {
+    background-color: #ffce08;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+    }
+
+    .logo-header {
+        margin-bottom: 15px;
+    }
+
+    .nav-header {
+        width: 100%;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+        text-align: right;
+        width: 100%;
+    }
+
+    .MenuBarHorizontal {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .MenuBarHorizontal.show {
+        display: flex;
+    }
+
+    .MenuBarHorizontal li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .MenuBarHorizontal ul {
+        position: static !important;
+        width: 100% !important;
+    }
+}

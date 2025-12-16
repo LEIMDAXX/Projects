@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* Estilos generales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+.contenedor {
+	width: 100%;
+	max-width: auto;
+	margin: 0 auto;
+	background: linear-gradient(135deg, #ffce08, #ffffff);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	background: linear-gradient(135deg, #333, #ffce08);
+	color: #fff;
+}
+
+.logo-header {
+	width: 60px;
+	height: 75px;
+	justify-content: space-between;
+	line-height: 1;
+}
+
+#logo {
+	width: 60px;
+	height: 75px;
+	justify-content: space-between;
+	line-height: 1;
+	background-image: url('../img/codigo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#Dev {
+	font-weight: bold;
+	margin-left: 85px;
+}
+
+#Masters {
+	font-weight: bold;
+	color: #ffce08;
+	margin-left: 105px;
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+}
+
+
+#contenido {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	min-height: 500px;
+}
+
+.home-page {
+	flex: 2;
+	padding: 50px;
+	margin-top: 20px;
+}
+
+.home-page p {
+	font-size: 25px;
+	text-align: justify;
+	line-height: 1.8;
+	margin-bottom: 20px;
+}
+
+aside {
+	flex: 1;
+	padding: 50px;
+}
+
+#seccion-home-page2 {
+	padding: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#seccion-home-page2 h1 {
+	color: #000000;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #ffce08;
+	padding-bottom: 5px;
+}
+
+#seccion-home-page2 p {
+	font-size: 18px;
+	text-align: justify;
+	line-height: 1.8;
+}
+
+.home-page img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin-top: 20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.footer-left {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+}
+
+.footer-left a {
+	color: #ffce08;
+	font-family: 'Poppins';
+	text-decoration: none;
+}
+
+.footer-left img {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+.footer-right {
+	display: flex;
+	gap: 15px;
+}
+
+.footer-right a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+}
+
+.footer-right a:hover {
+	background: #ffce08;
+	color: #333;
+	transform: translateY(-5px);
+}
+
+#nav-menu {
+	color: #fff;
+	text-decoration: none;
+	width: 200px;
+	padding: 10px 15px;
+	transition: background-color 0.3s;
+	text-align: center;
+}
+
+#nav-menu:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	transition: 0.3s;
+	transform: scale(1.1);
+}
+
+#nav-menu-cursos {
+	color: #000;
+	background-color: #fff;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	text-decoration: none;
+	padding: 10px 15px;
+}
+
+#nav-menu-cursos:hover,
+#MenuBar1 li ul li ul li a:hover {
+	transition: 0.3s;
+	transform: scale(1.05);
+}
+
+#MenuBar1 li ul li ul li a {
+	color: #000;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+@media screen and (max-width: 768px) {
+	.main-header {
+		flex-direction: column;
+	}
+
+	.logo-header {
+		margin-bottom: 15px;
+	}
+
+	.nav-header {
+		width: 100%;
+	}
+
+	#contenido {
+		flex-direction: column;
+	}
+
+	.home-page,
+	aside {
+		flex: 1 0 100%;
+	}
+
+	.MenuBarHorizontal {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.MenuBarHorizontal li {
+		width: 100%;
+		text-align: center;
+	}
+
+	.MenuBarHorizontal ul {
+		position: static !important;
+		width: 100% !important;
+		display: none;
+	}
+
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-left,
+	.footer-right {
+		margin: 10px 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.main-header {
+		padding: 10px;
+	}
+
+	#contenido {
+		padding: 10px;
+	}
+
+	.home-page,
+	aside {
+		padding: 10px;
+	}
+
+	#seccion-home-page2 h1 {
+		font-size: 22px;
+	}
+}
