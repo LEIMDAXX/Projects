@@ -1,0 +1,23 @@
+*{
+ text-decoration: none; 
+}
+
+body {
+    background-color: wheat;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px;
+  background-color: aqua;
+}
+
+p {
+    font-size: 30px;
+    text-align: justify;
+    font-family: Helvetica;
+    text-decoration: aqua;
+    margin: 12px;
+    flex-wrap: wrap;
+    display: flex;
+  }

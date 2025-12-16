@@ -1,0 +1,48 @@
+#principal {
+	width: 100%;
+}
+#principal #menu {
+	background-color: #80043F;
+}
+
+#principal #contenido {
+	padding: 50px;
+	background-color: #FFF;
+	float: left;
+	width: 800px;
+}
+#principal #pie {
+	background-image: url(../imagenes/pie_fondo.gif);
+	background-repeat: repeat-x;
+	height: 50px;
+	color: #FFF;
+	text-align: center;
+	padding-top: 30px;
+	float: left;
+	width: 900px;
+}
+#principal #contenido #texto {
+	width: 400px;
+	float: left;
+	margin-right: 50px;
+}
+#principal #contenido #imagenes {
+	width: 350px;
+	float: left;
+}
+body {
+	background-image: url(imagenes/fondo.gif);
+	background-repeat: repeat;
+	margin: 0px;
+}
+body,td,th {
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.logo-header {
+	width: 1000px;
+	height: 500px;
+	background: url(../img/logo_dev\ masters.jpg) center;
+	background-size: cover;
+	display: block;
+}
